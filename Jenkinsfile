@@ -2,7 +2,7 @@
 pipeline {
     agent any
     stages {
-        stage('build'){
+        stage('prueba'){
             steps{
                 script{
                     mover.moverArchivo()
