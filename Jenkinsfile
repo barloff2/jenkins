@@ -1,4 +1,4 @@
-@Library('librerias') _
+@Library('librerias')
 pipeline{
     agent any
     stages {
