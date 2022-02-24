@@ -5,7 +5,6 @@ pipeline {
         stage('build'){
             steps{
                 script{
-                    echo 'hola probando'
                     mover.moverArchivo()
                 }
             }
