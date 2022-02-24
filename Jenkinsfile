@@ -5,7 +5,7 @@ pipeline {
         stage('prueba'){
             steps{
                 script{
-                    sh mover2.saludar()
+                    mover2.saludar()
                 }
             }
         }
