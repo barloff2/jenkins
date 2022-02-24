@@ -1,5 +1,5 @@
-@Library('librerias')
-pipeline{
+@Library('jenkins-libs')
+pipeline {
     agent any
     stages {
         stage('build'){
