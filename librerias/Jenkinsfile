@@ -5,7 +5,7 @@ pipeline {
         stage('build'){
             steps{
                 script{
-                    mover.saludar()
+                    sh /home/stiven/scripts/script.sh
                 }
             }
         }
