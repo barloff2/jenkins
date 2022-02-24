@@ -5,7 +5,7 @@ pipeline {
         stage('prueba'){
             steps{
                 script{
-                    mover.moverArchivo()
+                    sh mover.moverArchivo()
                 }
             }
         }
