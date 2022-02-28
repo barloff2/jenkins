@@ -1,5 +1,5 @@
 @Library('jenkinsLibs') _
-def numPrue = $BUILD_NUMBER
+def numPrue = BUILD_NUMBER
 pipeline {
     agent any
     stages {
