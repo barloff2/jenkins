@@ -11,7 +11,7 @@ pipeline {
                 }
             }
         }
-        stage('copiar'){
+        stage('Clonar'){
             steps{
                 script{
                     echo "Clonar del repo..."
@@ -19,7 +19,7 @@ pipeline {
                 }
             }
         }
-        stage('mover'){
+        stage('Mover'){
             steps{
                 script{
                     echo "moviendo a documentos..."
