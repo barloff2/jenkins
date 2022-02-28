@@ -5,14 +5,14 @@ pipeline {
         stage('clonar'){
             steps{
                 script{
-                    mover.clonar()
+                    sh mover.clonar()
                 }
             }
         }
         stage('copiar'){
             steps{
                 script{
-                    mover.mover()
+                    echo "llega hasta aca"
                 }
             }
         }
