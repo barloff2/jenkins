@@ -23,7 +23,7 @@ pipeline {
             steps{
                 script{
                     echo "moviendo a documentos..."
-                    mover.mover()
+                    mover.mover(numPrue)
                 }
             }
         }
