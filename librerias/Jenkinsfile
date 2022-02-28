@@ -2,10 +2,10 @@
 pipeline {
     agent any
     stages {
-        stage('build'){
+        stage('example'){
             steps{
                 script{
-                    sh mover.saludar()
+                    saludar()
                 }
             }
         }
