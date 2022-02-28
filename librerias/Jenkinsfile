@@ -2,10 +2,17 @@
 pipeline {
     agent any
     stages {
-        stage('example'){
+        stage('clonar'){
             steps{
                 script{
-                    mover.saludar()
+                    mover.clonar()
+                }
+            }
+        }
+        stage('copiar'){
+            steps{
+                script{
+                    mover.mover()
                 }
             }
         }
