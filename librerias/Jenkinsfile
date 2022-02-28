@@ -1,11 +1,12 @@
 @Library('jenkinsLibs') _
+def numPrue = ${BUILD_NUMBER}
 pipeline {
     agent any
     stages {
         stage('crear'){
             steps{
                 script{
-                    mover.crearDir()
+                    mover.crearDir(numPrue)
                 }
             }
         }
