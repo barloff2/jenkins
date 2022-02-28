@@ -5,7 +5,7 @@ pipeline {
         stage('clonar'){
             steps{
                 script{
-                    sh mover.clonar()
+                    mover.clonar()
                 }
             }
         }
