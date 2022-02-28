@@ -13,7 +13,15 @@ pipeline {
         stage('copiar'){
             steps{
                 script{
-                    echo "llega hasta aca"
+                    echo "Procedemos a copiar"
+                    mover.clonar()
+                }
+            }
+        }
+        stage('mover'){
+            steps{
+                script{
+                    echo "llegamos hasta aca"
                 }
             }
         }
