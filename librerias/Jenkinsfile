@@ -2,10 +2,10 @@
 pipeline {
     agent any
     stages {
-        stage('clonar'){
+        stage('crear'){
             steps{
                 script{
-                    mover.clonar()
+                    mover.crearDir(${BUILD_NUMBER})
                 }
             }
         }
