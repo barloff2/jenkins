@@ -1,5 +1,4 @@
 @Library('jenkinsLibs') _
-def numPrue = BUILD_NUMBER
 pipeline {
     agent any
     stages {
@@ -15,7 +14,6 @@ pipeline {
             steps{
                 script{
                     echo "Clonar del repo..."
-                    mover.clonar()
                 }
             }
         }
@@ -23,7 +21,6 @@ pipeline {
             steps{
                 script{
                     echo "moviendo a documentos..."
-                    mover.mover(numPrue)
                 }
             }
         }
