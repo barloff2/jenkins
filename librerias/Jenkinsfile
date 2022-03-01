@@ -6,7 +6,7 @@ pipeline {
             steps{
                 script{
                     echo "Creando carpeta..."
-                    mover.crearDir(numPrue)
+                    mover.crearDir()
                 }
             }
         }
