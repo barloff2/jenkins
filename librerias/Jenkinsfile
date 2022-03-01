@@ -5,8 +5,7 @@ pipeline {
         stage('crear'){
             steps{
                 script{
-                    echo "Creando carpeta..."
-                    mover.crearDir()
+                    mover.saludar()
                 }
             }
         }
