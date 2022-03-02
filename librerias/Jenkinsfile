@@ -22,7 +22,9 @@ pipeline {
             steps{
                 script{
                     mover.moverCarpeta()
+                    echo 'moviendo carpeta'
                 }
             }
+        }
     }
 }
