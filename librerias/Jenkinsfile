@@ -1,5 +1,5 @@
 @Library('jenkinsLibs') _
-def saludar = new Saludar()
+Saludar saludar = new Saludar()
 pipeline {
     agent any
     stages {
