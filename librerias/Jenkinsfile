@@ -1,11 +1,12 @@
 @Library('jenkinsLibs') _
+def saludar = new Saludar()
 pipeline {
     agent any
     stages {
         stage('saludar'){
             steps{
                 script{
-                    mover.saludar()
+                    saludar.saludar()
                 }
             }
         }
