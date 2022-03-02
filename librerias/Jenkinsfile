@@ -13,7 +13,7 @@ pipeline {
         stage('clonar'){
             steps{
                 script{
-                    echo "hola"
+                    mover.clonandoProyecto()
                 } 
             }
         }
