@@ -11,8 +11,10 @@ pipeline {
             }
         }
         stage('clonar'){
-            script{
-                mover.clonandoProyecto
+            steps{
+                script{
+                    mover.clonandoProyecto
+                } 
             }
         }
     }
