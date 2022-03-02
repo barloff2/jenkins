@@ -6,7 +6,7 @@ pipeline {
             steps{
                 script{
                     mover.crearDirectorio()
-                    echo 'termino creacion carpeta'
+                    echo 'termino creacion carpetas'
                 }
             }
         }
@@ -14,8 +14,15 @@ pipeline {
             steps{
                 script{
                     mover.clonandoProyecto()
+                    echo 'termino clonacion'
                 } 
             }
         }
+        stage('mover'){
+            steps{
+                script{
+                    mover.moverCarpeta()
+                }
+            }
     }
 }
