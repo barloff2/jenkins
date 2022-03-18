@@ -4,7 +4,7 @@ pipeline{
         stage('docker build'){
             steps{
                 script{
-                    sh "docker build -f C:/Users/Stiven/Documents/repo/jenkins/Dockerfile openshift:v4"
+                    PowerShell "docker build -f C:/Users/Stiven/Documents/repo/jenkins/Dockerfile -t openshift:v4"
                 }
             }
         }
