@@ -8,13 +8,5 @@ pipeline{
                 }
             }
         }
-        stage{
-            steps{
-                docker.image('openshift:v3').iside{
-                    echo 'build con exito'
-                    sh 'oc version'
-                }
-            }
-        }
     }
 }
